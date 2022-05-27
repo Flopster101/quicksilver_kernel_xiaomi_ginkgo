@@ -2,9 +2,10 @@
 #
 # Compile script for QuicksilveR kernel
 # Copyright (C) 2020-2021 Adithya R.
+# Custom version for personal use by @Flopster101
 
 SECONDS=0 # builtin bash timer
-ZIPNAME="QuicksilveRV2-ginkgo-$(date '+%Y%m%d-%H%M').zip"
+ZIPNAME="QuicksilveR-FlopEdition-ginkgo-$(date '+%Y%m%d-%H%M').zip"
 TC_DIR="$HOME/tc/sdclang"
 GCC_DIR="$HOME/tc/gcc"
 GCC64_DIR="$HOME/tc/gcc64"
@@ -37,8 +38,8 @@ exit 1
 fi
 fi
 
-export KBUILD_BUILD_USER=endi
-export KBUILD_BUILD_HOST=enprytna
+export KBUILD_BUILD_USER=flop
+export KBUILD_BUILD_HOST=flopongitpod
 
 if [[ $1 = "-r" || $1 = "--regen" ]]; then
 make O=out ARCH=arm64 $DEFCONFIG savedefconfig
